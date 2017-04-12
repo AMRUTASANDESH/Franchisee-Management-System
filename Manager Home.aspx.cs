@@ -13,6 +13,8 @@ using System.Data.SqlClient;
 public partial class Manager_Home : System.Web.UI.Page
 {
     SqlConnection cnn = new SqlConnection(ConfigurationManager.ConnectionStrings["cnn"].ToString());
+
+  
     protected void Page_Load(object sender, EventArgs e)
     {
         TextBox1.Visible = false;
@@ -42,5 +44,9 @@ public partial class Manager_Home : System.Web.UI.Page
                 MasterPageFile = "~/Student.master";
             }
         }
+    }
+    protected void TextBox1_TextChanged(object sender, EventArgs e)
+    {
+
     }
 }

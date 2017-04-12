@@ -44,7 +44,7 @@ public partial class Login : System.Web.UI.Page
     {
         Session["Studentid"] = txtSid.Text;
         cnn.Open();
-        SqlCommand cmd = new SqlCommand("select Fname from sreg where Studentid='" + txtSid.Text + "' and Pwd='" + txtPwd.Text + "' and Status='Accepted'", cnn);
+        SqlCommand cmd = new SqlCommand("select Fname from sreg where Studentid='" + txtSid.Text + "' and Pwd='" + txtPwd.Text+"'",cnn);
         SqlDataReader dr = cmd.ExecuteReader();
         if (dr.Read())
         {

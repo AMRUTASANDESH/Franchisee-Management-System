@@ -15,10 +15,9 @@ public partial class Register : System.Web.UI.Page
     SqlConnection cnn = new SqlConnection(ConfigurationManager.ConnectionStrings["cnn"].ToString());
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        
     }
-    protected void Button1_Click(object sender, EventArgs e)
-    {
+    protected void Button1_Click(object sender, EventArgs e){
         cnn.Open();
         if (rbnMale.Checked)
         {
@@ -30,7 +29,7 @@ public partial class Register : System.Web.UI.Page
         }
 
 
-        string qry = "insert into sreg values('" + txtFName.Text + "','" + txtLName.Text + "','" + txtFatherName.Text + "','" + txtAddress.Text + "','" + txtCity.Text + "','" + txtState.Text + "','" + ddlCountry.SelectedItem + "','" + txtPincode.Text + "','" + txtEmail.Text + "','" + txtPhone.Text + "','" + txtDOB.Text + "','" + Label1.Text + "','" + ddlL1.SelectedItem + "','" + txtCourse1.Text + "','" + txtPercentage1.Text + "','" + txtInstitute1.Text + "','" + ddlL2.SelectedItem + "','" + txtCourse2.Text + "','" + txtPercentage2.Text + "','" + txtInstitute2.Text + "','" + ddlL3.SelectedItem + "','" + txtCourse3.Text + "','" + txtPercentage3.Text + "','" + txtInstitute3.Text + "','" + ddlL4.SelectedItem + "','" + txtCourse4.Text + "','" + txtPercentage4.Text + "','" + txtInstitute4.Text + "','" + txtExp.Text + "','" + txtExpertise.Text + "','" + txtCompany.Text + "','" + txtDes.Text + "','" + txtDDno.Text + "','" + txtAmount.Text + "','" + txtDdate.Text + "','" + txtBank.Text + "','" + txtPwd.Text + "','" + txtConfirmPwd.Text + "',NULL)";
+ string qry = "insert into sreg values('" + txtFName.Text + "','" + txtLName.Text + "','" + txtFatherName.Text + "','" + txtAddress.Text + "','" + txtCity.Text + "','" + txtState.Text + "','" + ddlCountry.SelectedItem + "','" + txtPincode.Text + "','" + txtEmail.Text + "','" + txtPhone.Text + "','" + this.Calendar1.SelectedDate.ToShortDateString() + "','" + Label1.Text + "','" + ddlL1.SelectedItem + "','" + txtCourse1.Text + "','" + txtPercentage1.Text + "','" + txtInstitute1.Text + "','" + ddlL2.SelectedItem + "','" + txtCourse2.Text + "','" + txtPercentage2.Text + "','" + txtInstitute2.Text + "','" + ddlL3.SelectedItem + "','" + txtCourse3.Text + "','" + txtPercentage3.Text + "','" + txtInstitute3.Text + "','" + ddlL4.SelectedItem + "','" + txtCourse4.Text + "','" + txtPercentage4.Text + "','" + txtInstitute4.Text + "','" + txtExp.Text + "','" + txtExpertise.Text + "','" + txtCompany.Text + "','" + txtDes.Text + "','NULL','NULL','NULL','NULL','"+ txtPwd.Text + "','" + txtConfirmPwd.Text + "',NULL)";       
         SqlCommand cmd = new SqlCommand(qry, cnn);
         cmd.ExecuteNonQuery();
         Session["Name"] = txtFName.Text;
@@ -41,4 +40,5 @@ public partial class Register : System.Web.UI.Page
     {
         Response.Redirect("Register.aspx");
     }
+    
 }

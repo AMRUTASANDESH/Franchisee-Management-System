@@ -1,0 +1,1417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Targets>
+  <Target Name="C:\Users\AMRUTA\AppData\Local\Temp\tmp3946.tmp.cadir\bin\App_Web_0405ckeu.dll">
+   <Modules>
+    <Module Name="app_web_0405ckeu.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Register_Others" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnRegister" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'btn' in member name 'Register_Others.btnRegister' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnRegister_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Register Others.aspx.cs" Line="33">In method 'Register_Others.btnRegister_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Register Others.aspx.cs" Line="23">In method 'Register_Others.btnRegister_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd1' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Register Others.aspx.cs" Line="28">Method 'Register_Others.btnRegister_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "User Name Already Exists !!".</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Register Others.aspx.cs" Line="21">Correct the casing of 'btn' in member name 'Register_Others.btnRegister_Click(object, EventArgs)' by changing it to 'Btn'.</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Register Others.aspx.cs" Line="21">Correct the spelling of 'btn' in member name 'Register_Others.btnRegister_Click(object, EventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Register Others.aspx.cs" Line="33">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Register_Others.btnRegister_Click(object, EventArgs)' could contain the following variables 'this.txtFName.Text', 'this.txtLName.Text', 'this.txtAddress.Text', 'this.txtCity.Text', 'this.txtState.Text', 'this.ddlCountry.SelectedItem', 'this.txtPincode.Text', 'this.txtEmail.Text', 'this.txtPhoneNumber.Text', 'this.txtFax.Text', 'this.txtCompanyName.Text', 'this.txtAnnulSales.Text', 'this.Calendar1.SelectedDate.ToShortDateString()', 'this.ddlGender.SelectedItem', 'this.txtUName.Text', 'this.txtPwd.Text', 'this.txtSQues.Text', 'this.txtAnswer.Text', 'this.ddlLogintype.SelectedItem'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Register Others.aspx.cs" Line="23">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Register_Others.btnRegister_Click(object, EventArgs)' could contain the following variables 'this.txtUName.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ddlCountry" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ddl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'ddl' in member name 'Register_Others.ddlCountry' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ddlGender" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ddl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'ddl' in member name 'Register_Others.ddlGender' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ddlLogintype" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Logintype" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Logintype' in member name 'Register_Others.ddlLogintype' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="ddl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'ddl' in member name 'Register_Others.ddlLogintype' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtConfirmPwd" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Pwd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pwd' in member name 'Register_Others.txtConfirmPwd' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtDOB_TextChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="DOB" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Register Others.aspx.cs" Line="41">Correct the casing of 'DOB' in member name 'Register_Others.txtDOB_TextChanged(object, EventArgs)' by changing it to 'Dob'.</Issue>
+            </Message>
+            <Message Id="txt" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Register Others.aspx.cs" Line="41">Correct the casing of 'txt' in member name 'Register_Others.txtDOB_TextChanged(object, EventArgs)' by changing it to 'Txt'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtFName_TextChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="txt" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Register Others.aspx.cs" Line="46">Correct the casing of 'txt' in member name 'Register_Others.txtFName_TextChanged(object, EventArgs)' by changing it to 'Txt'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtPincode" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Pincode" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pincode' in member name 'Register_Others.txtPincode' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtPwd" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Pwd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pwd' in member name 'Register_Others.txtPwd' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtSQues" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Ques" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Ques' in member name 'Register_Others.txtSQues' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\AMRUTA\AppData\Local\Temp\tmp3946.tmp.cadir\bin\App_Web_1n2ydq1p.dll">
+   <Modules>
+    <Module Name="app_web_1n2ydq1p.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Admin_Home" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#cnn" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'Admin_Home.cnn' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Admin Home.aspx.cs" Line="20">Method 'Admin_Home.Page_Load(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Welcome \', \' to Franchise Management System".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Admission_Approval" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Admission Approval.aspx.cs" Line="35">In method 'Admission_Approval.Button1_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Button2_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Admission Approval.aspx.cs" Line="43">In method 'Admission_Approval.Button2_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DropDownList1_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Admission Approval.aspx.cs" Line="54">In method 'Admission_Approval.DropDownList1_SelectedIndexChanged(object, EventArgs)', object 'ds' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Admission Approval.aspx.cs" Line="53">In method 'Admission_Approval.DropDownList1_SelectedIndexChanged(object, EventArgs)', call System.IDisposable.Dispose on object 'da' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Admission Approval.aspx.cs" Line="54">Be sure to set the DataSet Locale property wherever 'Admission_Approval.DropDownList1_SelectedIndexChanged(object, EventArgs)' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Admission Approval.aspx.cs" Line="21">In method 'Admission_Approval.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd1' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Books_Register" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Books Register.aspx.cs" Line="41">In method 'Books_Register.Button1_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Books Register.aspx.cs" Line="41">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Books_Register.Button1_Click(object, EventArgs)' could contain the following variables 'this.TextBox1.Text', 'this.TextBox2.Text', 'this.TextBox3.Text', 'this.TextBox4.Text', 'this.TextBox5.Text', 'this.DropDownList1.SelectedItem', 'this.TextBox6.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DropDownList1_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Books Register.aspx.cs" Line="30">In method 'Books_Register.DropDownList1_SelectedIndexChanged(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Books Register.aspx.cs" Line="19">In method 'Books_Register.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Change_Password" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnChangePwd" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Pwd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pwd' in member name 'Change_Password.btnChangePwd' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'btn' in member name 'Change_Password.btnChangePwd' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnChangePwd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Change Password.aspx.cs" Line="46">In method 'Change_Password.btnChangePwd_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Change Password.aspx.cs" Line="51">In method 'Change_Password.btnChangePwd_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd1' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Change Password.aspx.cs" Line="54">Method 'Change_Password.btnChangePwd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Changing Password is Sucessfull !!".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Change Password.aspx.cs" Line="59">Method 'Change_Password.btnChangePwd_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Sorry Password is Invalid  !!".</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Change Password.aspx.cs" Line="44">Correct the casing of 'btn' in member name 'Change_Password.btnChangePwd_Click(object, EventArgs)' by changing it to 'Btn'.</Issue>
+            </Message>
+            <Message Id="Pwd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Change Password.aspx.cs" Line="44">Correct the spelling of 'Pwd' in member name 'Change_Password.btnChangePwd_Click(object, EventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Change Password.aspx.cs" Line="44">Correct the spelling of 'btn' in member name 'Change_Password.btnChangePwd_Click(object, EventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Sucessfull" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Change Password.aspx.cs" Line="54">Correct the spelling of the unrecognized token 'Sucessfull' in the literal '"Changing Password is Sucessfull !!"'.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Change Password.aspx.cs" Line="51">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Change_Password.btnChangePwd_Click(object, EventArgs)' could contain the following variables 'this.txtNewPwd.Text', 'this.txtUName.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Change Password.aspx.cs" Line="46">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Change_Password.btnChangePwd_Click(object, EventArgs)' could contain the following variables 'this.txtUName.Text', 'this.txtPwd.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtNewPwd" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Pwd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pwd' in member name 'Change_Password.txtNewPwd' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtPwd" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Pwd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pwd' in member name 'Change_Password.txtPwd' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtReNewPwd" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ReNew" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'ReNew' in member name 'Change_Password.txtReNewPwd' exists as a discrete term. If your usage is intended to be single word, case it as 'Renew' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="Pwd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pwd' in member name 'Change_Password.txtReNewPwd' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Courses_Offered" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Add Courses Details.aspx.cs" Line="23">In method 'Courses_Offered.Button1_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Add Courses Details.aspx.cs" Line="23">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Courses_Offered.Button1_Click(object, EventArgs)' could contain the following variables 'this.DropDownList1.SelectedItem', 'this.TextBox1.Text', 'this.TextBox2.Text', 'this.TextBox3.Text', 'this.DropDownList2.SelectedItem', 'this.TextBox4.Text', 'this.DropDownList3.SelectedItem', 'this.DropDownList4.SelectedItem', 'this.DropDownList5.SelectedItem', 'this.DropDownList6.SelectedItem', 'this.DropDownList7.SelectedItem', 'this.DropDownList8.SelectedItem'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DropDownList1_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Add Courses Details.aspx.cs" Line="34">In method 'Courses_Offered.DropDownList1_SelectedIndexChanged(object, EventArgs)', object 'dt' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Add Courses Details.aspx.cs" Line="31">In method 'Courses_Offered.DropDownList1_SelectedIndexChanged(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Add Courses Details.aspx.cs" Line="31">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Courses_Offered.DropDownList1_SelectedIndexChanged(object, EventArgs)' could contain the following variables 'this.DropDownList1.SelectedItem'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Add Courses Details.aspx.cs" Line="34">Be sure to set the DataTable Locale property wherever 'Courses_Offered.DropDownList1_SelectedIndexChanged(object, EventArgs)' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Doctral_Programs" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Doctral" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Doctral' in type name 'Doctral_Programs'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Fee_Details" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Fee Details.aspx.cs" Line="31">In method 'Fee_Details.Button1_Click(object, EventArgs)', object 'ds' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Fee Details.aspx.cs" Line="30">In method 'Fee_Details.Button1_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'da' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Fee Details.aspx.cs" Line="30">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'Fee_Details.Button1_Click(object, EventArgs)' could contain the following variables 'this.TextBox1.Text', 'this.TextBox2.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Fee Details.aspx.cs" Line="31">Be sure to set the DataSet Locale property wherever 'Fee_Details.Button1_Click(object, EventArgs)' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Fee Details.aspx.cs" Line="20">In method 'Fee_Details.Page_Load(object, EventArgs)', object 'ds' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Fee Details.aspx.cs" Line="19">In method 'Fee_Details.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'da' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Fee Details.aspx.cs" Line="20">Be sure to set the DataSet Locale property wherever 'Fee_Details.Page_Load(object, EventArgs)' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Forgot_Password" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnSubmit" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'btn' in member name 'Forgot_Password.btnSubmit' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnSubmit_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Forgot Password.aspx.cs" Line="23">In method 'Forgot_Password.btnSubmit_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Forgot Password.aspx.cs" Line="33">Method 'Forgot_Password.btnSubmit_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "User Name and Email address do not match".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Forgot Password.aspx.cs" Line="27">Method 'Forgot_Password.btnSubmit_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Your Password Is  \', \'".</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Forgot Password.aspx.cs" Line="21">Correct the casing of 'btn' in member name 'Forgot_Password.btnSubmit_Click(object, EventArgs)' by changing it to 'Btn'.</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Forgot Password.aspx.cs" Line="21">Correct the spelling of 'btn' in member name 'Forgot_Password.btnSubmit_Click(object, EventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Forgot Password.aspx.cs" Line="23">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Forgot_Password.btnSubmit_Click(object, EventArgs)' could contain the following variables 'this.txtUName.Text', 'this.txtEmail.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lblPassword" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="lbl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'lbl' in member name 'Forgot_Password.lblPassword' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Forgot_Student_ID" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+           <Issue Name="TypeAbbreviation" Certainty="85" Level="Error">Correct the casing of 'ID' in type name 'Forgot_Student_ID' by changing it to 'Id'. 'Id' is an abbreviation and therefore is not subject to acronym casing guidelines.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#btnSubmit" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'btn' in member name 'Forgot_Student_ID.btnSubmit' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnSubmit_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Forgot Student ID.aspx.cs" Line="23">In method 'Forgot_Student_ID.btnSubmit_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Forgot Student ID.aspx.cs" Line="32">Method 'Forgot_Student_ID.btnSubmit_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "The Details donot Match !!".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Forgot Student ID.aspx.cs" Line="27">Method 'Forgot_Student_ID.btnSubmit_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Your Student Id is  ,  ".</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Forgot Student ID.aspx.cs" Line="21">Correct the casing of 'btn' in member name 'Forgot_Student_ID.btnSubmit_Click(object, EventArgs)' by changing it to 'Btn'.</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Forgot Student ID.aspx.cs" Line="21">Correct the spelling of 'btn' in member name 'Forgot_Student_ID.btnSubmit_Click(object, EventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="donot" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Forgot Student ID.aspx.cs" Line="32">Correct the spelling of the unrecognized token 'donot' in the literal '"The Details donot Match !!"'.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Forgot Student ID.aspx.cs" Line="23">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Forgot_Student_ID.btnSubmit_Click(object, EventArgs)' could contain the following variables 'this.txtLName.Text', 'this.txtFName.Text', 'this.txtEmail.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lblSid" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="lbl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'lbl' in member name 'Forgot_Student_ID.lblSid' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Home" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Home.aspx.cs" Line="35">In method 'Home.Button1_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Home.aspx.cs" Line="52">Method 'Home.Button1_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Sorry Invalid User !!".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Home.aspx.cs" Line="57">Method 'Home.Button1_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Sorry Invalid User !!".</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Home.aspx.cs" Line="35">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Home.Button1_Click(object, EventArgs)' could contain the following variables 'this.txtUName.Text', 'this.txtPwd.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#HyperLink1" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="HyperLink" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'HyperLink' in member name 'Home.HyperLink1' exists as a discrete term. If your usage is intended to be single word, case it as 'Hyperlink' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Home.aspx.cs" Line="22">Method 'Home.Page_Load(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Session(Name) has been removed".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtPwd" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Pwd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pwd' in member name 'Home.txtPwd' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Issue_Books" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="49">In method 'Issue_Books.Button1_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="49">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Issue_Books.Button1_Click(object, EventArgs)' could contain the following variables 'this.DropDownList1.Text', 'this.TextBox1.Text', 'this.DropDownList2.Text', 'this.TextBox2.Text', 'this.TextBox5.Text', 'this.TextBox6.Text', 'this.TextBox9.Text', 'this.TextBox10.Text', 'this.TextBox13.Text', 'this.TextBox14.Text', 'this.TextBox17.Text', 'this.TextBox18.Text', 'this.TextBox21.Text', 'this.TextBox22.Text', 'this.TextBox25.Text', 'this.TextBox26.Text', 'this.TextBox27.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#c1()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="87">In method 'Issue_Books.c1()', call System.IDisposable.Dispose on object 'cmd4' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="87">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Issue_Books.c1()' could contain the following variables 'this.TextBox4.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#c2()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="97">In method 'Issue_Books.c2()', call System.IDisposable.Dispose on object 'cmd5' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="97">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Issue_Books.c2()' could contain the following variables 'this.TextBox8.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#c3()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="107">In method 'Issue_Books.c3()', call System.IDisposable.Dispose on object 'cmd6' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="107">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Issue_Books.c3()' could contain the following variables 'this.TextBox12.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#c4()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="117">In method 'Issue_Books.c4()', call System.IDisposable.Dispose on object 'cmd7' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="117">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Issue_Books.c4()' could contain the following variables 'this.TextBox16.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#c5()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="127">In method 'Issue_Books.c5()', call System.IDisposable.Dispose on object 'cmd8' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="127">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Issue_Books.c5()' could contain the following variables 'this.TextBox20.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#c6()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="137">In method 'Issue_Books.c6()', call System.IDisposable.Dispose on object 'cmd9' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="137">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Issue_Books.c6()' could contain the following variables 'this.TextBox24.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Cost1()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="147">In method 'Issue_Books.Cost1()', call System.IDisposable.Dispose on object 'cmda' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="158">Method 'Issue_Books.Cost1()' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Book Not Available".</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.TextBox.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="157">Method 'Issue_Books.Cost1()' passes a literal string as parameter 'value' of a call to 'TextBox.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "0".</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="147">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Issue_Books.Cost1()' could contain the following variables 'this.TextBox4.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Cost2()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="166">In method 'Issue_Books.Cost2()', call System.IDisposable.Dispose on object 'cmdb' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="177">Method 'Issue_Books.Cost2()' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Book Not Available".</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.TextBox.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="176">Method 'Issue_Books.Cost2()' passes a literal string as parameter 'value' of a call to 'TextBox.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "0".</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="166">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Issue_Books.Cost2()' could contain the following variables 'this.TextBox8.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Cost3()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="185">In method 'Issue_Books.Cost3()', call System.IDisposable.Dispose on object 'cmdc' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="196">Method 'Issue_Books.Cost3()' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Book Not Available".</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.TextBox.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="195">Method 'Issue_Books.Cost3()' passes a literal string as parameter 'value' of a call to 'TextBox.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "0".</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="185">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Issue_Books.Cost3()' could contain the following variables 'this.TextBox12.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Cost4()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="204">In method 'Issue_Books.Cost4()', call System.IDisposable.Dispose on object 'cmdd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="215">Method 'Issue_Books.Cost4()' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Book Not Available".</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.TextBox.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="214">Method 'Issue_Books.Cost4()' passes a literal string as parameter 'value' of a call to 'TextBox.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "0".</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="204">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Issue_Books.Cost4()' could contain the following variables 'this.TextBox16.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Cost5()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="223">In method 'Issue_Books.Cost5()', call System.IDisposable.Dispose on object 'cmde' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="234">Method 'Issue_Books.Cost5()' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Book Not Available".</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.TextBox.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="233">Method 'Issue_Books.Cost5()' passes a literal string as parameter 'value' of a call to 'TextBox.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "0".</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="223">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Issue_Books.Cost5()' could contain the following variables 'this.TextBox20.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Cost6()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="242">In method 'Issue_Books.Cost6()', call System.IDisposable.Dispose on object 'cmdf' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="253">Method 'Issue_Books.Cost6()' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Book Not Available".</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.TextBox.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="252">Method 'Issue_Books.Cost6()' passes a literal string as parameter 'value' of a call to 'TextBox.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "0".</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="242">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Issue_Books.Cost6()' could contain the following variables 'this.TextBox24.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DropDownList1_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="56">In method 'Issue_Books.DropDownList1_SelectedIndexChanged(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd1' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DropDownList2_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="68">In method 'Issue_Books.DropDownList2_SelectedIndexChanged(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd3' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="68">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Issue_Books.DropDownList2_SelectedIndexChanged(object, EventArgs)' could contain the following variables 'this.DropDownList2.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="23">In method 'Issue_Books.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="24">In method 'Issue_Books.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'da' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="22">In method 'Issue_Books.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="22">Be sure to set the DataSet Locale property wherever 'Issue_Books.Page_Load(object, EventArgs)' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Seconddrop()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="38">In method 'Issue_Books.Seconddrop()', object 'dt1' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'dt1' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="35">In method 'Issue_Books.Seconddrop()', call System.IDisposable.Dispose on object 'cmd2' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="38">Be sure to set the DataTable Locale property wherever 'Issue_Books.Seconddrop()' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Total()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="261">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Issue_Books.Total()' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="261">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Issue_Books.Total()' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="261">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Issue_Books.Total()' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="261">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Issue_Books.Total()' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="261">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Issue_Books.Total()' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="261">Because the behavior of 'int.Parse(string)' could vary based on the current user's locale settings, replace this call in 'Issue_Books.Total()' with a call to 'int.Parse(string, IFormatProvider)'. If the result of 'int.Parse(string, IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Issue Books.aspx.cs" Line="262">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Issue_Books.Total()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Login" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="95" Level="Error">Replace the term 'Login' in type name 'Login' with the preferred alternate 'LogOn'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Login.aspx.cs" Line="47">In method 'Login.Button1_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Login.aspx.cs" Line="56">Method 'Login.Button1_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Sorry Invalid User !!".</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Login.aspx.cs" Line="47">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Login.Button1_Click(object, EventArgs)' could contain the following variables 'this.txtSid.Text', 'this.txtPwd.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#HyperLink1" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="HyperLink" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'HyperLink' in member name 'Login.HyperLink1' exists as a discrete term. If your usage is intended to be single word, case it as 'Hyperlink' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtPwd" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Pwd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pwd' in member name 'Login.txtPwd' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Manager_Home" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#cnn" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'Manager_Home.cnn' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Manager Home.aspx.cs" Line="22">Method 'Manager_Home.Page_Load(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Welcome \', \' to Franchise Management System".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MBA_Acounting" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="MBA" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'MBA' in type name 'MBA_Acounting' by changing it to 'Mba'.</Issue>
+          </Message>
+          <Message Id="Acounting" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Acounting' in type name 'MBA_Acounting'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="MBA_Finance" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="MBA" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'MBA' in type name 'MBA_Finance' by changing it to 'Mba'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Register" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Register.aspx.cs" Line="34">In method 'Register.Button1_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Register.aspx.cs" Line="34">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Register.Button1_Click(object, EventArgs)' could contain the following variables 'this.txtFName.Text', 'this.txtLName.Text', 'this.txtFatherName.Text', 'this.txtAddress.Text', 'this.txtCity.Text', 'this.txtState.Text', 'this.ddlCountry.SelectedItem', 'this.txtPincode.Text', 'this.txtEmail.Text', 'this.txtPhone.Text', 'this.Calendar1.SelectedDate.ToShortDateString()', 'this.Label1.Text', 'this.ddlL1.SelectedItem', 'this.txtCourse1.Text', 'this.txtPercentage1.Text', 'this.txtInstitute1.Text', 'this.ddlL2.SelectedItem', 'this.txtCourse2.Text', 'this.txtPercentage2.Text', 'this.txtInstitute2.Text', 'this.ddlL3.SelectedItem', 'this.txtCourse3.Text', 'this.txtPercentage3.Text', 'this.txtInstitute3.Text', 'this.ddlL4.SelectedItem', 'this.txtCourse4.Text', 'this.txtPercentage4.Text', 'this.txtInstitute4.Text', 'this.txtExp.Text', 'this.txtExpertise.Text', 'this.txtCompany.Text', 'this.txtDes.Text', 'this.txtDDno.Text', 'this.txtAmount.Text', 'this.txtDdate.Text', 'this.txtBank.Text', 'this.txtPwd.Text', 'this.txtConfirmPwd.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ddlCountry" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ddl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'ddl' in member name 'Register.ddlCountry' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ddlL1" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ddl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'ddl' in member name 'Register.ddlL1' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ddlL2" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ddl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'ddl' in member name 'Register.ddlL2' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ddlL3" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ddl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'ddl' in member name 'Register.ddlL3' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ddlL4" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ddl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'ddl' in member name 'Register.ddlL4' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#rbnFemale" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rbn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'rbn' in member name 'Register.rbnFemale' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#rbnMale" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rbn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'rbn' in member name 'Register.rbnMale' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtConfirmPwd" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Pwd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pwd' in member name 'Register.txtConfirmPwd' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtDdate" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Ddate" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Ddate' in member name 'Register.txtDdate' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtDDno" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dno" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dno' in member name 'Register.txtDDno' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtPincode" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Pincode" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pincode' in member name 'Register.txtPincode' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#txtPwd" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Pwd" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pwd' in member name 'Register.txtPwd' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Resources" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+           <Issue Name="System" Certainty="95" Level="Error">The type name 'Resources' conflicts in whole or in part with the namespace name 'System.Resources' defined in the .NET Framework. Rename the type to eliminate the conflict.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Stu_Forgot_Password" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnSubmit" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'btn' in member name 'Stu_Forgot_Password.btnSubmit' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnSubmit_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Stu Forgot Password.aspx.cs" Line="23">In method 'Stu_Forgot_Password.btnSubmit_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Stu Forgot Password.aspx.cs" Line="33">Method 'Stu_Forgot_Password.btnSubmit_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Sorry StudentId and Email address donot Match !!".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Stu Forgot Password.aspx.cs" Line="27">Method 'Stu_Forgot_Password.btnSubmit_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Your Password Is ,  ".</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Stu Forgot Password.aspx.cs" Line="21">Correct the casing of 'btn' in member name 'Stu_Forgot_Password.btnSubmit_Click(object, EventArgs)' by changing it to 'Btn'.</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Stu Forgot Password.aspx.cs" Line="21">Correct the spelling of 'btn' in member name 'Stu_Forgot_Password.btnSubmit_Click(object, EventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="StudentId" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Stu Forgot Password.aspx.cs" Line="33">Correct the spelling of the unrecognized token 'StudentId' in the literal '"Sorry StudentId and Email address donot Match !!"'.</Issue>
+            </Message>
+            <Message Id="donot" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Stu Forgot Password.aspx.cs" Line="33">Correct the spelling of the unrecognized token 'donot' in the literal '"Sorry StudentId and Email address donot Match !!"'.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Stu Forgot Password.aspx.cs" Line="23">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Stu_Forgot_Password.btnSubmit_Click(object, EventArgs)' could contain the following variables 'this.txtStudentId.Text', 'this.txtEmail.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lblPassword" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="lbl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'lbl' in member name 'Stu_Forgot_Password.lblPassword' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Student_Home" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Student Home.aspx.cs" Line="23">In method 'Student_Home.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Student Home.aspx.cs" Line="22">Method 'Student_Home.Page_Load(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Welcome \', \' to Franchise Management System".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Student Home.aspx.cs" Line="28">Method 'Student_Home.Page_Load(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Your Studentid is  ,   ".</Issue>
+            </Message>
+            <Message Id="Studentid" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Student Home.aspx.cs" Line="28">Correct the spelling of the unrecognized token 'Studentid' in the literal '"Your Studentid is  "'.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Student Home.aspx.cs" Line="23">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Student_Home.Page_Load(object, EventArgs)' could contain the following variables 'this.TextBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UAcconting" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Acconting" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Acconting' in type name 'UAcconting'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="View_Exam_Details" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Exam Details.aspx.cs" Line="34">In method 'View_Exam_Details.Button1_Click(object, EventArgs)', object 'ds1' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'ds1' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Exam Details.aspx.cs" Line="33">In method 'View_Exam_Details.Button1_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'da1' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Exam Details.aspx.cs" Line="40">Method 'View_Exam_Details.Button1_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "No Data Found".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Exam Details.aspx.cs" Line="28">Method 'View_Exam_Details.Button1_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Please give Courseid or Course Name".</Issue>
+            </Message>
+            <Message Id="Courseid" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Exam Details.aspx.cs" Line="28">Correct the spelling of the unrecognized token 'Courseid' in the literal '"Please give Courseid or Course Name"'.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Exam Details.aspx.cs" Line="33">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'View_Exam_Details.Button1_Click(object, EventArgs)' could contain the following variables 'this.TextBox1.Text', 'this.TextBox2.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Exam Details.aspx.cs" Line="34">Be sure to set the DataSet Locale property wherever 'View_Exam_Details.Button1_Click(object, EventArgs)' creates an instance of that type.</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Exam Details.aspx.cs" Line="26">Replace the call to 'string.operator ==(string, string)' in 'View_Exam_Details.Button1_Click(object, EventArgs)' with a call to 'String.IsNullOrEmpty'.</Issue>
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Exam Details.aspx.cs" Line="26">Replace the call to 'string.operator ==(string, string)' in 'View_Exam_Details.Button1_Click(object, EventArgs)' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Exam Details.aspx.cs" Line="19">In method 'View_Exam_Details.Page_Load(object, EventArgs)', object 'ds' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Exam Details.aspx.cs" Line="18">In method 'View_Exam_Details.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'da' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Exam Details.aspx.cs" Line="19">Be sure to set the DataSet Locale property wherever 'View_Exam_Details.Page_Load(object, EventArgs)' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="View_Franchise_Manager_Details" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Franchise Manager Details.aspx.cs" Line="38">In method 'View_Franchise_Manager_Details.Button1_Click(object, EventArgs)', object 'ds1' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'ds1' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Franchise Manager Details.aspx.cs" Line="37">In method 'View_Franchise_Manager_Details.Button1_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'da1' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Franchise Manager Details.aspx.cs" Line="44">Method 'View_Franchise_Manager_Details.Button1_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "No Data Found".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Franchise Manager Details.aspx.cs" Line="32">Method 'View_Franchise_Manager_Details.Button1_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Please Give Company Name".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Franchise Manager Details.aspx.cs" Line="28">Method 'View_Franchise_Manager_Details.Button1_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Please Give Franchise Id Or Franchise Name".</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Franchise Manager Details.aspx.cs" Line="37">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'View_Franchise_Manager_Details.Button1_Click(object, EventArgs)' could contain the following variables 'this.TextBox1.Text', 'this.TextBox3.Text', 'this.TextBox2.Text', 'this.TextBox3.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Franchise Manager Details.aspx.cs" Line="38">Be sure to set the DataSet Locale property wherever 'View_Franchise_Manager_Details.Button1_Click(object, EventArgs)' creates an instance of that type.</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Franchise Manager Details.aspx.cs" Line="26">Replace the call to 'string.operator ==(string, string)' in 'View_Franchise_Manager_Details.Button1_Click(object, EventArgs)' with a call to 'String.IsNullOrEmpty'.</Issue>
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Franchise Manager Details.aspx.cs" Line="26">Replace the call to 'string.operator ==(string, string)' in 'View_Franchise_Manager_Details.Button1_Click(object, EventArgs)' with a call to 'String.IsNullOrEmpty'.</Issue>
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Franchise Manager Details.aspx.cs" Line="30">Replace the call to 'string.operator ==(string, string)' in 'View_Franchise_Manager_Details.Button1_Click(object, EventArgs)' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="View_Student_Details" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Student Details.aspx.cs" Line="59">In method 'View_Student_Details.Button1_Click(object, EventArgs)', object 'ds1' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'ds1' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Student Details.aspx.cs" Line="58">In method 'View_Student_Details.Button1_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'da1' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Student Details.aspx.cs" Line="65">Method 'View_Student_Details.Button1_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "NO Data Found".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Student Details.aspx.cs" Line="53">Method 'View_Student_Details.Button1_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Please give Studentid or Student Name".</Issue>
+            </Message>
+            <Message Id="Studentid" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Student Details.aspx.cs" Line="53">Correct the spelling of the unrecognized token 'Studentid' in the literal '"Please give Studentid or Student Name"'.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Student Details.aspx.cs" Line="58">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'View_Student_Details.Button1_Click(object, EventArgs)' could contain the following variables 'this.TextBox1.Text', 'this.TextBox2.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Student Details.aspx.cs" Line="59">Be sure to set the DataSet Locale property wherever 'View_Student_Details.Button1_Click(object, EventArgs)' creates an instance of that type.</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Student Details.aspx.cs" Line="51">Replace the call to 'string.operator ==(string, string)' in 'View_Student_Details.Button1_Click(object, EventArgs)' with a call to 'String.IsNullOrEmpty'.</Issue>
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Student Details.aspx.cs" Line="51">Replace the call to 'string.operator ==(string, string)' in 'View_Student_Details.Button1_Click(object, EventArgs)' with a call to 'String.IsNullOrEmpty'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Student Details.aspx.cs" Line="20">In method 'View_Student_Details.Page_Load(object, EventArgs)', object 'ds' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Student Details.aspx.cs" Line="19">In method 'View_Student_Details.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'da' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="View Student Details.aspx.cs" Line="20">Be sure to set the DataSet Locale property wherever 'View_Student_Details.Page_Load(object, EventArgs)' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\AMRUTA\AppData\Local\Temp\tmp3946.tmp.cadir\bin\App_Web_jqb3lazs.dll">
+   <Modules>
+    <Module Name="app_web_jqb3lazs.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Exam_Details" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnC1" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'btn' in member name 'Exam_Details.btnC1' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnC1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="86">Correct the casing of 'btn' in member name 'Exam_Details.btnC1_Click(object, EventArgs)' by changing it to 'Btn'.</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="86">Correct the spelling of 'btn' in member name 'Exam_Details.btnC1_Click(object, EventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnC2" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'btn' in member name 'Exam_Details.btnC2' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnC2_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="101">Correct the casing of 'btn' in member name 'Exam_Details.btnC2_Click(object, EventArgs)' by changing it to 'Btn'.</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="101">Correct the spelling of 'btn' in member name 'Exam_Details.btnC2_Click(object, EventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnC3" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'btn' in member name 'Exam_Details.btnC3' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnC3_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="110">Correct the casing of 'btn' in member name 'Exam_Details.btnC3_Click(object, EventArgs)' by changing it to 'Btn'.</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="110">Correct the spelling of 'btn' in member name 'Exam_Details.btnC3_Click(object, EventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnC4" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'btn' in member name 'Exam_Details.btnC4' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnC4_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="119">Correct the casing of 'btn' in member name 'Exam_Details.btnC4_Click(object, EventArgs)' by changing it to 'Btn'.</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="119">Correct the spelling of 'btn' in member name 'Exam_Details.btnC4_Click(object, EventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnE1" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'btn' in member name 'Exam_Details.btnE1' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnE1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="128">Correct the casing of 'btn' in member name 'Exam_Details.btnE1_Click(object, EventArgs)' by changing it to 'Btn'.</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="128">Correct the spelling of 'btn' in member name 'Exam_Details.btnE1_Click(object, EventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnE2" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'btn' in member name 'Exam_Details.btnE2' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnE2_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="btn" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="137">Correct the casing of 'btn' in member name 'Exam_Details.btnE2_Click(object, EventArgs)' by changing it to 'Btn'.</Issue>
+            </Message>
+            <Message Id="btn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="137">Correct the spelling of 'btn' in member name 'Exam_Details.btnE2_Click(object, EventArgs)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Button2_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="57">In method 'Exam_Details.Button2_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="System.Web.UI.WebControls.Label.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="44">Method 'Exam_Details.Button2_Click(object, EventArgs)' passes a literal string as parameter 'value' of a call to 'Label.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "The Dates are Alike".</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="57">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Exam_Details.Button2_Click(object, EventArgs)' could contain the following variables 'this.DropDownList1.SelectedItem', 'this.TextBox1.Text', 'this.TextBox2.Text', 'this.TextBox3.Text', 'this.TextBox4.Text', 'this.TextBox5.Text', 'this.TextBox6.Text', 'this.TextBox7.Text', 'this.TextBox8.Text', 'this.TextBox9.Text', 'this.TextBox10.Text', 'this.TextBox11.Text', 'this.TextBox12.Text', 'this.TextBox13.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DropDownList1_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="71">In method 'Exam_Details.DropDownList1_SelectedIndexChanged(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd2' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="71">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Exam_Details.DropDownList1_SelectedIndexChanged(object, EventArgs)' could contain the following variables 'this.DropDownList1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="20">In method 'Exam_Details.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'cmd1' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="21">In method 'Exam_Details.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'da' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="22">In method 'Exam_Details.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Error" Path="c:\Users\AMRUTA\Documents\Visual Studio 2010\Projects\Franchisee-Management-System" File="Exam Details.aspx.cs" Line="22">Be sure to set the DataSet Locale property wherever 'Exam_Details.Page_Load(object, EventArgs)' creates an instance of that type.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\AMRUTA\AppData\Local\Temp\tmp3946.tmp.cadir\bin\App_Web_kx1avf2a.dll">
+   <Modules>
+    <Module Name="app_web_kx1avf2a.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Admin" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ContentPlaceHolder1" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="PlaceHolder" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'PlaceHolder' in member name 'Admin.ContentPlaceHolder1' exists as a discrete term. If your usage is intended to be single word, case it as 'Placeholder' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Franchisee_Manager" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ContentPlaceHolder1" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="PlaceHolder" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'PlaceHolder' in member name 'Franchisee_Manager.ContentPlaceHolder1' exists as a discrete term. If your usage is intended to be single word, case it as 'Placeholder' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Home" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ContentPlaceHolder1" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="PlaceHolder" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'PlaceHolder' in member name 'Home.ContentPlaceHolder1' exists as a discrete term. If your usage is intended to be single word, case it as 'Placeholder' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Student" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ContentPlaceHolder1" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="PlaceHolder" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2017-04-04 15:46:23Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'PlaceHolder' in member name 'Student.ContentPlaceHolder1' exists as a discrete term. If your usage is intended to be single word, case it as 'Placeholder' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245042(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberShouldBeDiscreteTerm">The compound word '{0}' in member name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Dispose objects before losing scope</Name>
+   <Description>If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.</Description>
+   <Resolution Name="ExceptionEdge">In method {0}, object {1} is not disposed along all exception paths. Call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Resolution Name="NonExceptionEdge">In method {0}, call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>Do not pass literals as localized parameters</Name>
+   <Description>Literal strings that are embedded in source code are difficult to localize. Avoid passing literal strings as arguments in circumstances where a localized string is generally expected.</Description>
+   <Resolution Name="KnownValue">Method {0} passes a literal string as parameter '{1}' of a call to {2}. Retrieve the following string(s) from a resource table instead: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="Type">Correct the casing of '{0}' in type name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="TypeAbbreviation">Correct the casing of '{0}' in type name {1} by changing it to '{2}'. '{2}' is an abbreviation and therefore is not subject to acronym casing guidelines.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204">
+   <Name>Literals should be spelled correctly</Name>
+   <Description>This rule parses the literal string into words, tokenizing compound words, and checks the spelling of each word/token.</Description>
+   <Resolution Name="Default">Correct the spelling of the unrecognized token '{0}' in the literal '{1}'.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/bb264488(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="SetLocaleForDataTypes" Category="Microsoft.Globalization" CheckId="CA1306">
+   <Name>Set locale for data types</Name>
+   <Description>In most cases, Locale should be explicitly set to CultureInfo.InvariantCulture on DataSet and DataTable instances. Upon creation of a DataSet or DataTable instance, the Locale is set to the current culture. In most cases, the Locale should be set to CultureInfo.InvariantCulture to guarantee proper sorting behavior in all cultures.</Description>
+   <Resolution Name="Default">Be sure to set the {0} Locale property wherever {1} creates an instance of that type.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182188(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternate">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be based on input from the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify {4}.</Resolution>
+   <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820">
+   <Name>Test for empty strings using string length</Name>
+   <Description>To test for empty strings, check if String.Length is equal to zero. Constructs such as "".Equals(someString) and String.Empty.Equals(someString) are less efficient than testing the string length. Replace these with checks for someString.Length == 0.</Description>
+   <Resolution Name="IsNullOrEmpty">Replace the call to {0} in {1} with a call to 'String.IsNullOrEmpty'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182279(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724">
+   <Name>Type names should not match namespaces</Name>
+   <Description>Identifiers which conflict in whole or in part with namespace names should be avoided. Names that describe the purpose or contents of a type are preferred.</Description>
+   <Resolution Name="System">The type name {0} conflicts in whole or in part with the namespace name '{1}' defined in the .NET Framework. Rename the type to eliminate the conflict.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182257(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726">
+   <Name>Use preferred terms</Name>
+   <Description>Use preferred terms over deprecated alternates.</Description>
+   <Resolution Name="Type">Replace the term '{0}' in type name {1} with the preferred alternate '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182258(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

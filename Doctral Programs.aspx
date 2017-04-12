@@ -1,7 +1,7 @@
 <%@ Page Language="C#" MasterPageFile="~/Student.master" AutoEventWireup="true" CodeFile="Doctral Programs.aspx.cs" Inherits="Doctral_Programs" Title="Untitled Page" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <asp:Panel ID="Panel1" runat="server" Height="315px" Style="z-index: 100; left: 195px;
-        position: absolute; top: 213px" Width="629px">
+        position: absolute; top: 217px" Width="629px">
         <p class="FutureDOCTORALtopic">
             <strong><span style="font-size: 18pt">Doctoral Program Overview</span></strong></p>
         <p class="FutureDOCTORALtext">
@@ -20,7 +20,8 @@
             planning and managerial decision-making.</p>
         <p class="FutureDOCTORALtext">
             <strong>Doctoral Programs:</strong></p>
-        <table cellpadding="10" style="z-index: 100; left: 18px; position: absolute; top: 311px">
+        <table cellpadding="10" 
+            style="z-index: 100; left: 18px; position: absolute; top: 311px; width: 477px; height: 223px;">
             <tr>
                 <td colspan="2">
                     <asp:LinkButton ID="LinkButton1" runat="server" Style="z-index: 100; left: 11px;
@@ -46,7 +47,10 @@
                     <span class="FutureUndergraduatetext"><span style="font-size: 20px; vertical-align: middle">
                         •</span> &nbsp; Marketing</span><br />
                     <span class="FutureUndergraduatetext"><span style="font-size: 20px; vertical-align: middle">
-                        •</span> &nbsp; Operations Management</span></td>
+                        •</span> &nbsp; Operations Management<asp:Button ID="Button1" 
+                        runat="server" Height="43px" Text="Click here for take the addmission" 
+                        onclick="Button1_Click" />
+                    </span></td>
             </tr>
         </table>
         <br />

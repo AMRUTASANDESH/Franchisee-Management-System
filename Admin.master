@@ -21,7 +21,8 @@
             <asp:Menu ID="Menu1" runat="server" BackColor="#E3EAEB" DynamicHorizontalOffset="2"
                 Font-Names="Verdana" Font-Size="0.8em" ForeColor="#FFBF03" Orientation="Horizontal"
                 StaticSubMenuIndent="10px" Style="z-index: 100; left: 43px; position: absolute;
-                top: 145px; color: #ffbf03; background-color: #ffffff; font-size: 12pt;" Width="913px" Font-Bold="True">
+                top: 145px; color: #ffbf03; background-color: #ffffff; font-size: 12pt;" 
+                Width="913px" Font-Bold="True" onmenuitemclick="Menu1_MenuItemClick">
                 <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
                 <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
                 <DynamicMenuStyle BackColor="#E3EAEB" />

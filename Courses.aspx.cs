@@ -37,4 +37,20 @@ public partial class Courses : System.Web.UI.Page
         //    }
         //}
     }
+    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+    {
+
+    }
+    protected void ImageButton1_Click1(object sender, ImageClickEventArgs e)
+    {
+
+    }
+    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+    {
+
+    }
+    protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+    {
+
+    }
 }

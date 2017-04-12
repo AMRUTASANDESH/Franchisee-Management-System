@@ -58,4 +58,8 @@ public partial class Admission_Approval : System.Web.UI.Page
         //}
         cnn.Close();
     }
+    protected void DetailsView1_PageIndexChanging(object sender, DetailsViewPageEventArgs e)
+    {
+
+    }
 }

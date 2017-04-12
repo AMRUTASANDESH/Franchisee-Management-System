@@ -30,10 +30,20 @@ public partial class Register_Others : System.Web.UI.Page
         else
         {
             dr.Close();           
-            SqlCommand cmd = new SqlCommand("insert into oregister values('" + txtFName.Text + "','" + txtLName.Text + "','" + txtAddress.Text + "','" + txtCity.Text + "','" + txtState.Text + "','" + ddlCountry.SelectedItem + "','" + txtPincode.Text + "','" + txtEmail.Text + "','" + txtPhoneNumber.Text + "','" + txtFax.Text + "','" + txtCompanyName.Text + "','" + txtAnnulSales.Text + "','" + txtDOB.Text + "','" + ddlGender.SelectedItem + "','" + txtUName.Text + "','" + txtPwd.Text + "','" + txtSQues.Text + "','" + txtAnswer.Text + "','" + ddlLogintype.SelectedItem + "')", cnn);
+            SqlCommand cmd = new SqlCommand("insert into oregister values('" + txtFName.Text + "','" + txtLName.Text + "','" + txtAddress.Text + "','" + txtCity.Text + "','" + txtState.Text + "','" + ddlCountry.SelectedItem + "','" + txtPincode.Text + "','" + txtEmail.Text + "','" + txtPhoneNumber.Text + "','" + txtFax.Text + "','" + txtCompanyName.Text + "','" + txtAnnulSales.Text + "','" + this.Calendar1.SelectedDate.ToShortDateString()
+                + "','" + ddlGender.SelectedItem + "','" + txtUName.Text + "','" + txtPwd.Text + "','" + txtSQues.Text + "','" + txtAnswer.Text + "','" + ddlLogintype.SelectedItem + "')", cnn);
             cmd.ExecuteNonQuery();
             Response.Redirect("Register Others.aspx");
         }
         cnn.Close();
+    }
+    protected void txtDOB_TextChanged(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void txtFName_TextChanged(object sender, EventArgs e)
+    {
+
     }
 }

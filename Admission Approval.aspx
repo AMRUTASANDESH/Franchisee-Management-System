@@ -24,7 +24,8 @@
         <tr>
             <td style="width: 100px">
                 &nbsp;
-                <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="171px" >
+                <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="171px" 
+                    onpageindexchanging="DetailsView1_PageIndexChanging" >
                 </asp:DetailsView>
             </td>
         </tr>

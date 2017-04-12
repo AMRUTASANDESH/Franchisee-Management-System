@@ -351,11 +351,23 @@
            <td style="width: 100px; height: 26px;">
                 Date Of Birth :</td>
             <td style="width: 215px; height: 26px;">
-                <asp:TextBox ID="txtDOB" runat="server"></asp:TextBox>&nbsp;
+                &nbsp;
+                <asp:Calendar ID="Calendar1" runat="server" BackColor="White" 
+                    BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" 
+                    Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="180px" 
+                     Width="200px">
+                    <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
+                    <NextPrevStyle VerticalAlign="Bottom" />
+                    <OtherMonthDayStyle ForeColor="#808080" />
+                    <SelectedDayStyle BackColor="#666666" Font-Bold="True" ForeColor="White" />
+                    <SelectorStyle BackColor="#CCCCCC" />
+                    <TitleStyle BackColor="#999999" BorderColor="Black" Font-Bold="True" />
+                    <TodayDayStyle BackColor="#CCCCCC" ForeColor="Black" />
+                    <WeekendDayStyle BackColor="#FFFFCC" />
+                </asp:Calendar>
             </td>
             <td style="width: 238px; height: 26px">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtDOB" 
-                    >*</asp:RequiredFieldValidator>
+                
             </td>
             <td style="width: 170px">
                 Gender :</td>
@@ -548,66 +560,10 @@
             </td>
         </tr>
         <tr>
-            <td colspan="5" style="height: 35px">
-                <strong><span style="color: #2b69ac">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Student Registeration Fees</span></strong></td>
-            <td colspan="1" style="height: 35px">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Demand Draft No :</td>
-            <td style="width: 215px">
-                <asp:TextBox ID="txtDDno" runat="server"></asp:TextBox>&nbsp;
-            </td>
-            <td style="width: 238px">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="txtDDno" 
-                    >*</asp:RequiredFieldValidator>
-            </td>
-            
-            <td style="width: 170px">
-                &nbsp;Amount :&nbsp;
-            </td>
-            <td style="width: 185px">
-                <asp:TextBox ID="txtAmount" runat="server"></asp:TextBox>
-            </td>
-            <td>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="txtAmount"
-                   >*</asp:RequiredFieldValidator>
-            </td>
-        </tr>
-         <tr>
-             <td>
-                 Draft Date :</td>
-            <td style="width: 215px">
-                <asp:TextBox ID="txtDdate" runat="server"></asp:TextBox>&nbsp;
-            </td>
-             <td style="width: 238px">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="txtDdate" 
-                    >*</asp:RequiredFieldValidator>
-             </td>
-             
-            <td style="width: 170px">
-                Bank &amp; Branch :&nbsp;
-            </td>
-            <td style="width: 185px">
-                <asp:TextBox ID="txtBank" runat="server"></asp:TextBox>
-            </td>
-             <td>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="txtBank" 
-                    >*</asp:RequiredFieldValidator>
-             </td>
-        </tr>
-        <tr>
             <td colspan="5" style="height: 26px">
                 <strong><span style="color: #2b69ac">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
-                    &nbsp; &nbsp;
-                    Student Account Details</span></strong></td>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Student Account Details</span></strong></td>
             <td colspan="1" style="height: 26px">
             </td>
         </tr>
